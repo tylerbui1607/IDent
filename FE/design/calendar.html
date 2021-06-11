@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="calendar.css">
+</head>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+<body>
+    <div class="m1em page_container">
+        <div class="appointment">
+            <div class="service">
+                <div class="content">
+                    <p>Need a doctor?</p>
+                    <h2>Make An Appointment Now</h2>
+                </div>
+                <div class="book-doctor">
+                    <label for="service">Service</label>
+                    <select id="service">
+                        <option class="service-name" value="Porcelain crowns">Porcelain crowns</option>
+                        <option class="service-name" value="saab">Saab</option>
+                        <option class="service-name" value="mercedes">Mercedes</option>
+                        <option class="service-name" value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                    <label for="doctor">Doctor</label>
+                    <select id="doctor">
+                        <option class="doctor-name" value="Tyler">Tyler</option>
+                        <option class="doctor-name" value="saab">Saab</option>
+                        <option class="doctor-name" value="mercedes">Mercedes</option>
+                        <option class="doctor-name" value="audi">Audi</option>
+                    </select>
+                    <label for="phone">Your phone number</label>
+                    <input type="text" id="phone">
+                    <button onclick="getDoctorSchedule()" id="getDoctor-btn">Book now</button>
+                </div>
+            </div>
+            <div class="container">
+                <div class="calendar">
+                    <div class="month noselect">
+                        <ion-icon class="prev-btn" name="chevron-back-outline"></ion-icon>
+                        <div class="date">
+                            <h1></h1>
+                            <p></p>
+                        </div>
+                        <ion-icon class="next-btn" name="chevron-forward-outline"></ion-icon>
+                    </div>
+                    <div class="weekdays">
+                        <div class="noselect">Mo</div>
+                        <div class="noselect">Tu</div>
+                        <div class="noselect">We</div>
+                        <div class="noselect">Th</div>
+                        <div class="noselect">Fr</div>
+                        <div class="noselect">Sa</div>
+                        <div class="noselect">Su</div>
+                    </div>
+                    <div class="days"></div>
+                </div>
+                <div class="schedule">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="calendar.js"></script>
+
+</html>

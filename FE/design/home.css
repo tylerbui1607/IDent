@@ -1,0 +1,214 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: roboto,sans-serif;
+  text-decoration: none;
+}
+button{
+  background-color: transparent;
+  border: none;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  height: 4em;
+  position: relative;
+  background: url('./banner-bg.jpg');
+}
+.nav .dropdown {
+  margin-right: 3em;
+  position: relative;
+
+}
+.nav .dropdown .dropdown-btn{
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+.dropdown-list{
+  width: 12em;
+  z-index: 3;
+  display: none;
+  opacity: 0;
+  transition: opacity 1s;
+  position: absolute;
+  background-color: white;
+  padding-right: 0.5em;
+  border-radius: 0.25em;
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.5);
+}
+.dropdown:hover .dropdown-list{
+  display: block;
+  opacity: 1;
+}
+.dropdown-item:first-of-type{
+  padding-top: 1em;
+}
+.dropdown-item{
+  padding-bottom: 1em;
+  padding-left: 1em;
+  display: block;
+  color: #3c3f42;
+  font-size: 0.875em;
+}
+.dropdown-item:hover{
+  color: #3988d3;
+}
+#login-btn{
+  height: 3.5em;
+  width: 10em;
+  border: #4d72d0 2px solid;
+  border-radius: 2em;
+}
+
+.service{
+  width: 100%;
+  padding-top: 5%;
+  background-color:rgba(209, 246, 255, 0.3);
+}
+.slider-container{
+  padding-left: 8%;
+  padding-right: 8%;
+}
+.card{
+  width: 32%;
+  max-height: 26em;
+  background-color: white;
+  margin-bottom: 3em;
+  z-index: 2;
+  height: 100%;
+  padding: 2em;
+  padding-top: 3em;
+  background: url('./services-bg1.png') no-repeat right;
+  background-color: rgba(82, 175, 144, 0.1);
+  border: white 0.5em solid;
+}
+.card > .name {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-top: 1.5em;
+}
+.card > .description {
+  height: 6em;
+  font-size: 15px;
+  font-size: 0.8em;
+  line-height: 2em;
+  color: #3c3f42;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+.card > a {
+  display: block;
+  width: 9em;
+  line-height: 3.5em;
+  font-size: 0.857em;
+  background: #3c3f42;
+  text-align: center;
+  color: white;
+  border-radius: 0.35em;
+  box-shadow: 0 0 6px black;
+}
+.card:hover{
+  border: rgba(82, 175, 144, 0.6) 0.5em solid;
+}
+.card:hover > a {
+  background-color: rgba(82, 175, 144, 1);
+  box-shadow: 0 0 6px rgba(82, 175, 144, 0.6);
+}
+
+.footer{
+  position: relative;
+  height: 28em;
+  width: 100%;
+  background: url('./footer-bg.jpg');
+  padding-left: 6%;
+  padding-right: 6%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__contact{
+  width: 19em;
+  height: 22em;
+  background: #3c3f42;
+  padding-left: 2.5em;
+  padding-right: 3.5em;
+  padding-top: 2.5em;
+  font-weight: 300;
+  color: #dededebd;
+  border-radius: 0.25em;
+}
+.footer__contact > .content {
+  text-align: justify;
+  font-size: 14px;
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+  line-height: 1.5em;
+}
+.footer__contact > h4 {
+  margin-top: 1em;
+}
+.footer__contact > h4 {
+  font-size: 19px;
+  font-weight: 200;
+}
+.footer__contact > h4 > i {
+  background-color: #5bc198;
+  padding: 0.5em;
+  border-radius: 0.25em;
+  font-size: 14px;
+  margin-right: 1em;
+  color: white;
+}
+.footer__link {
+  margin-top: 6em;
+}
+.footer__link > .link-title {
+  color: #5bc198;
+  font-size: 1.125em;
+  margin-bottom: 1em;
+}
+.footer__link > a:first-of-type{
+  margin-top: 2em;
+}
+.footer__link > a{
+  display: block;
+  text-decoration: none;
+  color: #dededebd;
+  font-size: 13px;
+  margin-bottom: 1.5em;
+  font-weight: 300;
+}
+.footer__link > a:hover{
+  color: #5bc198;
+}
+.footer__link > a > i{
+  margin-right: 1em;
+}
+.footer__link > .footer-button{
+  width: 11em;
+  height: 3.5em;
+  background-color: transparent;
+  color: #5bc198;
+  border: #5bc198 1.5px solid;
+  border-radius: 0.25em;
+  margin-bottom: 1em;
+  display: block;
+}
+.footer__link > .footer-button:hover{
+  box-shadow: 0 0 8px rgba(48, 134, 8, 0.8);
+}
+.footer__link > .visit-btn{
+  background-color: #5bc198;
+  border: none;
+  color: white;
+  border-radius: 0.25em;
+  width: 2em;
+  height: 2em;
+  margin-right: 0.5em;
+}
+.line {
+    height: 0.25em;
+    background: #3c3f42;
+}

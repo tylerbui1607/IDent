@@ -1,0 +1,16 @@
+@import "./variable";
+@import "./base";
+@import "./login";
+@import "./nav";
+@import "./banner";
+@import "./footer";
+@import "./listSkills";
+@import "./listDentist";
+@import "./clinicInfo";
+@import "./calendar";
+@import "./sidebar";
+.App {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}

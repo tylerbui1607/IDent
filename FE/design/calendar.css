@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+  box-sizing: border-box;
+}
+.h100 {
+  height: 100vh;
+}
+.w100 {
+  width: 100vw;
+  background-color: teal;
+}
+.page_container {
+  padding-top: 1em;
+  min-height: 90vh;
+}
+.p1em {
+  padding: 1em;
+}
+.m1em {
+  margin: 1em;
+}
+.center_column {
+}
+.appointment {
+  width: 90%;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+.service {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  width: 30%;
+  color: #333;
+  border-radius: 10px 0 0 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#getDoctor-btn {
+  width: 100%;
+  height: 3em;
+  margin-top: 30px;
+  border: 1.5px solid #333;
+  background: transparent;
+  color: #333;
+  font-weight: bold;
+  border-radius: 0.25em;
+  cursor: pointer;
+}
+#getDoctor-btn:focus {
+  outline: none;
+}
+#getDoctor-btn:hover {
+  border: none;
+  border: 1.5px solid #333;
+  background: rgba(168, 168, 168, 0.5);
+  color: white;
+}
+.content {
+  width: 90%;
+}
+.book-doctor {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 30px;
+}
+.book-doctor input {
+  width: 100%;
+  height: 3em;
+  border-radius: 0.25em;
+  border: solid #333 1.5px;
+  outline: none;
+  color: #333;
+  padding: 10px;
+  background: transparent;
+}
+.book-doctor input:focus {
+  outline: none;
+}
+.book-doctor select {
+  width: 100%;
+  height: 3em;
+  border-radius: 0.25em;
+  border: solid #333 1.5px;
+  outline: none;
+  color: #333;
+  background: transparent;
+}
+.book-doctor select option {
+  color: #333;
+  height: 2em;
+  max-width: 100%;
+  border: none;
+}
+.container {
+  background-color: white;
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+.calendar {
+  width: 50%;
+  height: 100%;
+  background-color: white;
+}
+.month {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #666;
+}
+.month ion-icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+.month ion-icon:hover {
+  color: rgb(185, 183, 183);
+}
+.month h1 {
+  font-size: 35px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+}
+.month p {
+  margin-bottom: 20px;
+  font-size: 15px;
+  text-align: center;
+  display: block;
+}
+
+.weekdays {
+  display: flex;
+  font-size: 12px;
+  font-weight: bold;
+  justify-content: center;
+  margin-top: 10px;
+}
+.weekdays div {
+  width: calc(100% / 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.days .prev-date,
+.next-date {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.days {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  line-height: 40px;
+}
+.col1-7 {
+  padding: 5px;
+  width: calc(100% / 7);
+}
+.square {
+  width: 100%;
+  padding-top: 100%; /* 1:1 Aspect Ratio */
+  position: relative;
+}
+.days .day-display {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #6e6d6d;
+  font-weight: 400;
+  box-sizing: border-box;
+  border-radius: 100%;
+  transition: all 0.3s;
+}
+.days .today {
+  background: #9ec6dd;
+  color: white;
+}
+.days .day-display:hover {
+  background: #57aee0;
+  color: white;
+  transition: all 0.3s;
+}
+.schedule {
+  width: 50%;
+  height: 100%;
+  border-radius: 5px;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.schedule img {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: 1;
+}
+.schedule-layer2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  background: #57aee0ab;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.small-plan {
+  width: 60%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.5px solid rgb(201, 201, 201);
+  box-shadow: 0px 0px 10px gray;
+  transition: all 0.3s;
+  cursor: pointer;
+  background: #57aee0;
+  color: white;
+  border-radius: 10px;
+}
+.small-plan:hover {
+  background: #68c4fa;
+  color: white;
+  transition: all 0.3s;
+}
+.day-have-plan {
+  background: rgb(226, 223, 223);
+}
+
+@media screen and (max-width: 991px) {
+  .appointment {
+    width: 100%;
+  }
+  .calendar {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .appointment {
+    width: 100%;
+    justify-content: center;
+  }
+  .calendar {
+    width: 80%;
+  }
+  .service {
+    width: 80%;
+  }
+  .container {
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .appointment {
+    width: 100%;
+    justify-content: center;
+  }
+  .calendar {
+    width: 100%;
+  }
+  .service {
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

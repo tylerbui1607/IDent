@@ -1,0 +1,254 @@
+.clinic-info {
+  width: 84%;
+  border-radius: 0.25em;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.clinic-info > .news {
+  background-color: #32dac3;
+  width: 25%;
+  padding: 2em;
+}
+.clinic-info > .news > p {
+  color: white;
+  font-size: 14px;
+  line-height: 1.5em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+.clinic-info > .news a {
+  color: white;
+  font-size: 14px;
+}
+.clinic-info > .opening-info {
+  background-color: #32b8da;
+  padding: 2em;
+  width: 25%;
+}
+.clinic-info > .opening-info > .info {
+  color: white;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+.clinic-info > .department-info {
+  background-color: #07a7e3;
+  padding: 2em;
+  width: 50%;
+}
+.clinic-info .line {
+  height: 1px;
+  color: white;
+  display: block;
+  margin: 0.5em;
+}
+.clinic-info .title {
+  color: white;
+  margin-bottom: 1.5em;
+  font-size: 24px;
+}
+.clinic-info > .department-info .department-name {
+  color: white;
+  font-size: 14px;
+  line-height: 1.5em;
+  margin-bottom: 1.25em;
+}
+.clinic-number {
+  text-align: center;
+  width: 100%;
+  background-image: url(https://dental-clinic.cmsmasters.net/wp-content/uploads/2015/07/content-prlx.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  padding: 3em;
+  .home-title {
+    color: white;
+    margin-top: 0;
+  }
+  .home-title-sub {
+    color: white;
+  }
+  .card-container {
+    width: 85%;
+    margin: auto;
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .container {
+      border: $border;
+      border-radius: 0.5em;
+      width: 12em;
+      height: 12em;
+      background-color: rgba(226, 226, 226, 0.2);
+      overflow: hidden;
+      flex-direction: column;
+      justify-content: center;
+      .img-container {
+        width: 20%;
+        margin: auto;
+        margin-top: 2em;
+        margin-bottom: 1.5em;
+        img {
+          width: 100%;
+        }
+      }
+      .info,
+      .title {
+        color: white;
+      }
+      .info {
+        font-size: 2em;
+      }
+      .title {
+        margin-top: 0.5em;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .clinic-info > .news {
+    background-color: #32dac3;
+    width: 100%;
+    padding: 2em;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+  }
+  .clinic-info > .opening-info {
+    background-color: #32b8da;
+    padding: 2em;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    width: 100%;
+  }
+  .clinic-info > .department-info {
+    background-color: #07a7e3;
+    padding: 2em;
+    width: 100%;
+  }
+  .clinic-number {
+    text-align: center;
+    width: 100%;
+    padding: 3em;
+    padding-left: 0em;
+    padding-right: 0em;
+    .card-container {
+      width: 100%;
+      margin: auto;
+      margin-top: 2em;
+      display: flex;
+      justify-content: center;
+      .container {
+        border: $border;
+        border-radius: 0.5em;
+        width: 11em;
+        height: 11em;
+        background-color: rgba(226, 226, 226, 0.2);
+        overflow: hidden;
+        margin-top: 1em;
+      }
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .clinic-info {
+    width: 80%;
+    .news {
+      background-color: #32dac3;
+      width: 50%;
+      padding: 2em;
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+    }
+    .opening-info {
+      background-color: #32b8da;
+      padding: 2em;
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+      width: 50%;
+    }
+    .department-info {
+      background-color: #07a7e3;
+      padding: 2em;
+      width: 100%;
+    }
+  }
+  .clinic-number {
+    text-align: center;
+    width: 100%;
+    padding: 3em;
+    padding-left: 1em;
+    padding-right: 1em;
+    .card-container {
+      width: 100%;
+      margin: auto;
+      margin-top: 2em;
+      display: flex;
+      justify-content: center;
+      .container {
+        border: $border;
+        border-radius: 0.5em;
+        width: 11em;
+        height: 11em;
+        background-color: rgba(226, 226, 226, 0.2);
+        overflow: hidden;
+        margin-top: 1em;
+      }
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .clinic-info {
+    width: 75%;
+    .news {
+      background-color: #32dac3;
+      width: 50%;
+      padding: 2em;
+    }
+    .opening-info {
+      background-color: #32b8da;
+      padding: 2em;
+      width: 50%;
+    }
+    .department-info {
+      background-color: #07a7e3;
+      padding: 2em;
+      width: 100%;
+    }
+  }
+  .clinic-number {
+    text-align: center;
+    width: 100%;
+    padding: 3em;
+    padding-left: 1em;
+    padding-right: 1em;
+    .card-container {
+      width: 100%;
+      margin: auto;
+      margin-top: 2em;
+      display: flex;
+      justify-content: center;
+      .container {
+        border: $border;
+        border-radius: 0.5em;
+        width: 11em;
+        height: 11em;
+        background-color: rgba(226, 226, 226, 0.2);
+        overflow: hidden;
+        margin-top: 1em;
+      }
+    }
+  }
+}

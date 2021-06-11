@@ -1,0 +1,143 @@
+.nav {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  height: 4em;
+  width: 100%;
+  z-index: 3;
+  .mobile-display {
+    display: none;
+    margin-right: 1em;
+    img {
+      width: 20px;
+      object-fit: contain;
+    }
+  }
+}
+.logo {
+  padding-left: 2em;
+  width: 25%;
+}
+.logo img {
+  width: 120px;
+}
+.dropdown-container {
+  margin-left: auto;
+  margin-right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav .dropdown {
+  margin-left: 3em;
+  position: relative;
+}
+.nav .dropdown .dropdown-btn {
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 4em;
+  display: block;
+}
+.nav .dropdown .dropdown-btn:hover {
+  color: #464646;
+}
+.dropdown-list {
+  width: auto;
+  z-index: 2;
+  display: none;
+  opacity: 0;
+  transition: opacity 1s;
+  position: absolute;
+  background-color: white;
+  padding-right: 0.5em;
+  border-radius: 0.25em;
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.5);
+}
+.dropdown:hover .dropdown-list {
+  display: block;
+  opacity: 1;
+}
+.dropdown-item:first-of-type {
+  padding-top: 1em;
+}
+.dropdown-item {
+  padding-bottom: 1em;
+  padding-left: 1em;
+  display: block;
+  color: #3c3f42;
+  font-size: 0.875em;
+}
+a.dropdown-item {
+  min-width: 12em;
+}
+button.dropdown-item {
+  min-width: 10em;
+}
+.dropdown-item:hover {
+  color: #2d7bc4;
+}
+#account-btn {
+  border: rgb(86, 142, 216) 2px solid;
+  border-radius: 2em;
+  height: 3em;
+  width: 10em;
+  margin-right: 2em;
+  color: #333;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    padding-left: 0em;
+    width: 100%;
+  }
+  .nav .dropdown {
+    display: none;
+    margin-left: 2em;
+  }
+  #account-btn {
+    margin-right: 0em;
+    width: 8em;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .logo {
+    padding-left: 0em;
+    display: none;
+  }
+  .dropdown-container {
+    width: 100%;
+  }
+  .nav .dropdown {
+    margin-left: 2em;
+  }
+  #account-btn {
+    margin-right: 0em;
+    width: 8em;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .logo {
+    padding-left: 0em;
+    width: 15%;
+  }
+  .nav .dropdown {
+    margin-left: 2em;
+  }
+  #account-btn {
+    margin-right: 0em;
+    width: 8em;
+  }
+}
+
+@media only screen and (max-height: 450px) {
+}

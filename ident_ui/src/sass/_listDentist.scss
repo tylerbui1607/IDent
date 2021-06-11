@@ -1,0 +1,217 @@
+.dentist-list {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url(https://dental-clinic.cmsmasters.net/wp-content/uploads/2015/07/content-dot2.jpg);
+  #preBtn,
+  #nextBtn {
+    top: 53%;
+    z-index: 1;
+    opacity: 0.4;
+    width: 1.25em;
+    height: 2.5em;
+    color: black;
+    font-size: 1.25em;
+    position: absolute;
+    background-color: rgba($color: #000000, $alpha: 0.3);
+  }
+  #preBtn {
+    left: 5.5em;
+  }
+  #nextBtn {
+    right: 5.5em;
+  }
+  .slider-container {
+    margin: auto;
+    width: 90%;
+    padding: 3%;
+    display: flex;
+    padding-top: 2em;
+    position: relative;
+    justify-content: space-around;
+    .card-container {
+      padding: 1em;
+      .dentist-card {
+        border-radius: 0.25em;
+        background-color: white;
+        z-index: 2;
+        position: relative;
+        border: white 0.5em solid;
+        border: $border;
+        .name {
+          font-size: 20px;
+          margin-top: 1.5em;
+          font-weight: normal;
+          font-style: normal;
+          font-family: "Open Sans", Arial, Helvetica, "Nimbus Sans L",
+            sans-serif;
+          color: #474747;
+        }
+        .img-container {
+          width: 13em;
+          height: 13em;
+          margin: auto;
+          margin-top: 2em;
+          overflow: hidden;
+          border-radius: 10em;
+          img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .title {
+          font-size: 15px;
+          margin-top: 0.5em;
+          margin-bottom: 1.25em;
+          color: $lightblue;
+        }
+        .dentist-info {
+          text-align: center;
+          font-family: "Open Sans", Arial, Helvetica, "Nimbus Sans L",
+            sans-serif;
+          font-size: 13px;
+          color: #868686;
+          line-height: 1.5em;
+          padding-left: 2.5em;
+          padding-right: 2.5em;
+          margin-bottom: 2em;
+        }
+      }
+    }
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .dentist-list {
+    #preBtn {
+      left: 1.5em;
+    }
+    #nextBtn {
+      right: 1.5em;
+    }
+    .slider-container {
+      margin: auto;
+      width: 80%;
+      padding: 3%;
+      padding-top: 2em;
+      position: relative;
+      .card-container {
+        padding: 1em;
+        .dentist-card {
+          border-radius: 0.25em;
+          background-color: white;
+          z-index: 2;
+          position: relative;
+          border: white 0.5em solid;
+          border: $border;
+          .img-container {
+            width: 13em;
+            height: 13em;
+            margin: auto;
+            margin-top: 2em;
+            overflow: hidden;
+            border-radius: 10em;
+            img {
+              object-fit: cover;
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .dentist-list {
+    #preBtn {
+      left: 1.5em;
+    }
+    #nextBtn {
+      right: 1.5em;
+    }
+    .slider-container {
+      margin: auto;
+      width: 90%;
+      padding: 3%;
+      padding-top: 2em;
+      position: relative;
+      .card-container {
+        padding: 0.5em;
+        .dentist-card {
+          border-radius: 0.25em;
+          background-color: white;
+          z-index: 2;
+          position: relative;
+          border: white 0.5em solid;
+          border: $border;
+          .img-container {
+            width: 13em;
+            height: 13em;
+            margin: auto;
+            margin-top: 2em;
+            overflow: hidden;
+            border-radius: 10em;
+            img {
+              object-fit: cover;
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .dentist-list {
+    #preBtn {
+      left: 2.5em;
+    }
+    #nextBtn {
+      right: 2.5em;
+    }
+    .slider-container {
+      margin: auto;
+      width: 80%;
+      padding: 3%;
+      padding-top: 2em;
+      position: relative;
+      .card-container {
+        padding: 1em;
+        .dentist-card {
+          border-radius: 0.25em;
+          background-color: white;
+          z-index: 2;
+          position: relative;
+          border: white 0.5em solid;
+          border: $border;
+          .img-container {
+            width: 13em;
+            height: 13em;
+            margin: auto;
+            margin-top: 2em;
+            overflow: hidden;
+            border-radius: 10em;
+            img {
+              object-fit: cover;
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
